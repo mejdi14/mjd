@@ -5,7 +5,16 @@
 
             </project-component>
 
-            <project-component :project="projects.w3il" :class="{'slide-right': loading}">
+            <project-component :project="projects.tait" :class="{'slide-right': loading}">
+
+            </project-component>
+        </div>
+        <div class="row">
+            <project-component :project="projects.honeywell" :class="{'slide-left': loading}">
+
+            </project-component>
+
+            <project-component :project="projects.decathlon" :class="{'slide-right': loading}">
 
             </project-component>
         </div>
@@ -46,11 +55,38 @@ export default {
         loading: true,
         projects: 
         {
-            adventurecord: 
+            honeywell: 
             {
-                name: 'Waiter',
+                name: 'Honeywell',
+                summary: "Honeywell wanted a custom native app for it's hardware mobile phone with custom parts like the talkie walkie systeme they made \n With a team of engineer i worked on creating a communication app with a banch of features like Voip call, Messaging, Video calls, Group calls and location.",
+                img: 'honeywell.png',
+                demo: 'https://play.google.com/store/apps/details?id=procleanmobility.asmtunis.com.proresteauwaiter&hl=en',
+                code: 'private',
+                technologies: 
+                [
+                     {name: 'Android'},
+                    {name: 'Kotlin'},
+                    {name: 'Jetpack Compose'},
+                    {name: 'Sentry'},
+                    {name: 'Junit'},
+                    {name: 'Expresso'},
+                    {name: 'WorkManager'},
+                    {name: 'SDK'},
+                    {name: 'Mavean'},
+                    {name: 'Coroutines'},
+                    {name: 'Flow'},
+                    {name: 'Github'},
+                     {name: 'Github actions'},
+                      {name: 'SonarQube'},
+                    {name: 'UI/UX'},
+                ]
+            },
+
+ decathlon: 
+            {
+                name: 'Decathlon',
                 summary: " This is one of my favorite projects, we were trying to help the owners of big restaurants and coffee shops with customers service. \n\n This app allow the waiter to take the customer order directly on a tablette or a phone and the app will send this order to the kitchen at the moment by sending a request to the printer which will print a ticket.",
-                img: 'blackwaiter.png',
+                img: 'decathlon1.jpeg',
                 demo: 'https://play.google.com/store/apps/details?id=procleanmobility.asmtunis.com.proresteauwaiter&hl=en',
                 code: 'private',
                 technologies: 
@@ -68,8 +104,29 @@ export default {
                     {name: 'UI/UX'},
                 ]
             },
-
-            w3il: 
+             tait: 
+            {
+                name: 'Tait',
+                summary: " This is one of my favorite projects, we were trying to help the owners of big restaurants and coffee shops with customers service. \n\n This app allow the waiter to take the customer order directly on a tablette or a phone and the app will send this order to the kitchen at the moment by sending a request to the printer which will print a ticket.",
+                img: 'tait.png',
+                demo: 'https://play.google.com/store/apps/details?id=procleanmobility.asmtunis.com.proresteauwaiter&hl=en',
+                code: 'private',
+                technologies: 
+                [
+                     {name: 'Android'},
+                    {name: 'Java'},
+                    {name: 'Xml'},
+                    {name: 'Kotlin'},
+                    {name: 'PHP'},
+                    {name: 'Laravel'},
+                    {name: 'SqlServer'},
+                    {name: 'Gitlab'},
+                     {name: 'CI/CD'},
+                      {name: 'SonarQube'},
+                    {name: 'UI/UX'},
+                ]
+            },
+            adventurecord: 
             {
                 name: 'Dux Mobile',
                 summary: "This was the biggest project i have worked on yet. The goal was to help commercials in their daily work, this project gave me the chance to try many new features and technologies. \n\n I bounced many hats during this project and worked a lot on things like MVVM design pattern, rxJava, live data, view models, WebSocket for realtime notifications and more.",
@@ -96,7 +153,7 @@ export default {
             {
                 name: 'Android Flat Dialog',
                 summary: 'The idea behind this project was to contribute to the android cummunity and give something back. i decided to create a simple but beautiful dialog and i called it flat dialog. \n\n The full process of making this library was a total joy and a great experience for me.',
-                img: 'flatdialog.png',
+                img: 'mybus.jpeg',
                 demo: 'https://github.com/mejdi14/Flat-Dialog-Android',
                 code: 'https://github.com/mejdi14/Flat-Dialog-Android',
                 technologies: 

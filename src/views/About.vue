@@ -1,7 +1,7 @@
 <template>
   <main class="about" :class="{'rotate': loading}">
-      <primary-header-component> <span>Yo, it's </span> <span> Mejdi Hafiane</span> </primary-header-component>
-      <primary-sub-component text="I'm an android developer currently based in Sfax, Tunisia"></primary-sub-component>
+      <primary-header-component> <span>Yo, it's </span> <span> Mejdi Hafiene</span> </primary-header-component>
+      <primary-sub-component text="I'm a mobile developer currently based in Lille, France"></primary-sub-component>
       <primary-sub-component text="Hit me up and let's create something special"></primary-sub-component>
       <button-component>View Projects</button-component>
   </main>
