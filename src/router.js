@@ -19,6 +19,11 @@ export default new Router({
       path: '/portfolio',
       name: 'portfolio',
       component: () => import(/* webpackChunkName: "portfolio" */ './views/Portfolio.vue')
+    },
+    {
+      path: '/open',
+      name: 'open',
+      component: () => import(/* webpackChunkName: "open" */ './views/OpenSource.vue')
     }
   ]
 })

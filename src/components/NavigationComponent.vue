@@ -20,6 +20,12 @@
                         <span>Portfolio</span>
                     </router-link>
                 </li>
+
+                <li class="navigation__item" @click="navActive = false">
+                    <router-link to="/open" class="navigation__link">
+                        <span>Open Source</span>
+                    </router-link>
+                </li>
             </ul>
         </nav>
     </div>

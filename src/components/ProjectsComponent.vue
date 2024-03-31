@@ -1,15 +1,6 @@
 <template>
     <div class="portfolio">
         <div class="row">
-            <project-component :project="projects.adventurecord" :class="{'slide-left': loading}">
-
-            </project-component>
-
-            <project-component :project="projects.tait" :class="{'slide-right': loading}">
-
-            </project-component>
-        </div>
-        <div class="row">
             <project-component :project="projects.honeywell" :class="{'slide-left': loading}">
 
             </project-component>
@@ -19,18 +10,27 @@
             </project-component>
         </div>
         <div class="row">
-            <project-component :project="projects.portfolio" :class="{'slide-left': loading}">
+            <project-component :project="projects.tait" :class="{'slide-left': loading}">
 
             </project-component>
-            <project-component :project="projects.arcore" :class="{'slide-right': loading}">
+
+            <project-component :project="projects.comikey" :class="{'slide-right': loading}">
 
             </project-component>
         </div>
         <div class="row">
-        <project-component :project="projects.music" :class="{'slide-left': loading}">
+            <project-component :project="projects.mybus" :class="{'slide-left': loading}">
+
+            </project-component>
+            <project-component :project="projects.waiter" :class="{'slide-right': loading}">
+
+            </project-component>
+        </div>
+        <div class="row">
+        <project-component :project="projects.proinventory" :class="{'slide-left': loading}">
 
         </project-component>
-            <project-component :project="projects.books" :class="{'slide-right': loading}">
+            <project-component :project="projects.proresto" :class="{'slide-right': loading}">
 
         </project-component>
     </div>
@@ -104,11 +104,11 @@ export default {
                     {name: 'UI/UX'},
                 ]
             },
-             tait: 
+            waiter: 
             {
-                name: 'Tait',
+                name: 'Pro Waiter',
                 summary: " This is one of my favorite projects, we were trying to help the owners of big restaurants and coffee shops with customers service. \n\n This app allow the waiter to take the customer order directly on a tablette or a phone and the app will send this order to the kitchen at the moment by sending a request to the printer which will print a ticket.",
-                img: 'tait.png',
+                img: 'waiter.png',
                 demo: 'https://play.google.com/store/apps/details?id=procleanmobility.asmtunis.com.proresteauwaiter&hl=en',
                 code: 'private',
                 technologies: 
@@ -126,7 +126,29 @@ export default {
                     {name: 'UI/UX'},
                 ]
             },
-            adventurecord: 
+             tait: 
+            {
+                name: 'Tait',
+                summary: "Working with the USA company Tait on their product to handle communication for their employees and to manage big teams within the company itself. \n\n We worked with a third party company to use their SDK for some feature like voip calls, video calls and group calls.",
+                img: 'tait.png',
+                demo: 'https://play.google.com/store/apps/details?id=procleanmobility.asmtunis.com.proresteauwaiter&hl=en',
+                code: 'private',
+                technologies: 
+                [
+                     {name: 'Android'},
+                    {name: 'Kotlin'},
+                    {name: 'Xml'},
+                    {name: 'Mavean'},
+                    {name: 'SDK'},
+                    {name: 'Gradle'},
+                    {name: 'Firebase'},
+                    {name: 'Github'},
+                     {name: 'CI/CD'},
+                      {name: 'SonarQube'},
+                    {name: 'UI/UX'},
+                ]
+            },
+            dux: 
             {
                 name: 'Dux Mobile',
                 summary: "This was the biggest project i have worked on yet. The goal was to help commercials in their daily work, this project gave me the chance to try many new features and technologies. \n\n I bounced many hats during this project and worked a lot on things like MVVM design pattern, rxJava, live data, view models, WebSocket for realtime notifications and more.",
@@ -148,64 +170,85 @@ export default {
                     {name: 'UI/UX'},
                 ]
             },
-
-            portfolio: 
+            comikey: 
             {
-                name: 'Android Flat Dialog',
-                summary: 'The idea behind this project was to contribute to the android cummunity and give something back. i decided to create a simple but beautiful dialog and i called it flat dialog. \n\n The full process of making this library was a total joy and a great experience for me.',
-                img: 'mybus.jpeg',
-                demo: 'https://github.com/mejdi14/Flat-Dialog-Android',
-                code: 'https://github.com/mejdi14/Flat-Dialog-Android',
+                name: 'Comikey',
+                summary: "Another USA company i worked with as a freelancer, we were a team of two people working on the mobile app for both Android and IOS. The goal of the app is to provide a degital way to read manga and comics, The app was published to play store and app store and had a lot of users within the first weeks.",
+                img: 'comikey.jpeg',
+                demo: 'https://play.google.com/store/apps/details?id=com.comikey.banagher&hl=en&gl=US',
+                code: 'private',
                 technologies: 
                 [
-                    {name: 'Android'},
-                    {name: 'Java'},
-                    {name: 'Xml'},
-                    {name: 'Gitlab'},
-                    {name: 'Jitpack'},
+                     {name: 'Flutter'},
+                    {name: 'RiverPod'},
+                    {name: 'Very_Good_Analytics'},
+                    {name: 'GRPC'},
+                    {name: 'Protobuf'},
+                    {name: 'Go Router'},
+                    {name: 'Cryptography'},
+                    {name: 'In App Purchase'},
+                     {name: 'CI/CD'},
+                      {name: 'Dio'},
                     {name: 'UI/UX'},
                 ]
             },
-            books:
+            mybus: 
+            {
+                name: 'MyBus',
+                summary: 'Working remotely to make an app which works on both Android and IOS with Ionic. the app is made to make using public transport in France even easier by providing real time localisation and online ticket purchase. \n\n It was a good apportunity to learn ionic and how to communicate with french teams.',
+                img: 'mybus.jpeg',
+                demo: 'https://play.google.com/store/apps/details?id=fr.monkeystudio.mybusgeneric&hl=fr',
+                code: 'private',
+                technologies: 
+                [
+                    {name: 'Android'},
+                    {name: 'IOS'},
+                    {name: 'Ionic'},
+                    {name: 'TypeScript'},
+                    {name: 'MapBox'},
+                    {name: 'Bitrise'},
+                    {name: 'Jasmin'},
+                    {name: 'NestJs'},
+                ]
+            },
+            proinventory:
                 {
-                    name: 'Books swipe exemple',
-                    summary: 'my first open source project with kotlin, i learned with this project how to work with complex animations and how to use git flow and kraken to boost my work',
-                    img: 'preview.gif',
-                    demo: 'https://github.com/mejdi14/BooksSwipe',
-                    code: 'https://github.com/mejdi14/BooksSwipe',
-                    technologies:
-                        [
-                            {name: 'Android'},
-                            {name: 'Kotlin'},
-                            {name: 'Xml'},
-                            {name: 'Github'},
-                            {name: 'Jitpack'},
-                            {name: 'UI/UX'},
-                            {name: 'Constraint Layout'},
-                            {name: 'Git Flow'},
-                            {name: 'Git kraken'},
-                            {name: 'Github Actions'},
-                        ]
-                },
-            profile:
-                {
-                    name: 'Android Profile Design',
-                    summary: 'the goal with this project was simple, i had to create a pretty profile page with constraint layout and use motion layout to make it more alive',
-                    img: 'profile.jpg',
-                    demo: 'https://github.com/mejdi14/ProfileDesign',
-                    code: 'https://github.com/mejdi14/ProfileDesign',
+                    name: 'ProInventory',
+                    summary: 'An Android native app used to use stock workers to register goods using a bar-code scanner, we worked with custom Android phones with have a bar-code scanner device integrated which we used services and communicate with them.',
+                    img: 'proinventory.png',
+                    demo: 'https://play.google.com/store/apps/details?id=com.asmtunis.proinventory&hl=ln',
+                    code: 'private',
                     technologies:
                         [
                             {name: 'Android'},
                             {name: 'Java'},
                             {name: 'Xml'},
+                            {name: 'Android Service'},
+                            {name: 'Room'},
+                            {name: 'SQL Server'},
+                            {name: 'Retrofit'},
                             {name: 'Github'},
-                            {name: 'Jitpack'},
-                            {name: 'UI/UX'},
-                            {name: 'Constraint Layout'},
-                            {name: 'Motion layout'},
-                            {name: 'ShapeableImageView'},
-                            {name: 'circle-ci'},
+                            {name: 'Git kraken'},
+                        ]
+                },
+            proresto:
+                {
+                    name: 'ProResto Mobile',
+                    summary: 'A native Android app used to help restaurants owners to see how much money they made in a specific periode of time, also see how many table is occopied and performance of each waiter working in the restaurant.',
+                    img: 'proresto.png',
+                    demo: 'https://play.google.com/store/apps/details?id=tn.asm.ProResto&hl=en&gl=US',
+                    code: 'private',
+                    technologies:
+                        [
+                        {name: 'Android'},
+                            {name: 'Java'},
+                            {name: 'Xml'},
+                            {name: 'Android Service'},
+                            {name: 'Room'},
+                            {name: 'SQL Server'},
+                            {name: 'Retrofit'},
+                            {name: 'Github'},
+                            {name: 'Git kraken'},
                         ]
                 },
             rating:
