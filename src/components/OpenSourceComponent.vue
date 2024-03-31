@@ -43,14 +43,6 @@
             </project-component>
         </div>
         <div class="row">
-        <project-component :project="projects.music" :class="{'slide-left': loading}">
-
-        </project-component>
-            <project-component :project="projects.books" :class="{'slide-right': loading}">
-
-        </project-component>
-    </div>
-        <div class="row">
             <project-component :project="projects.rating" :class="{'slide-left': loading}">
 
             </project-component>
