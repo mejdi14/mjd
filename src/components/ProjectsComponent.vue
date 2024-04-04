@@ -34,14 +34,6 @@
 
         </project-component>
     </div>
-        <div class="row">
-            <project-component :project="projects.rating" :class="{'slide-left': loading}">
-
-            </project-component>
-            <project-component :project="projects.profile" :class="{'slide-right': loading}">
-
-            </project-component>
-        </div>
     </div>
 </template>
 
